@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{222ec9f2-fa1a-4c6a-be9b-4fc6fb8f7ccb}">
+		<property name="assetPath">
+			<value>y2mate.com - whats_new_pussycat_9QZ2B2CiNQg_1080p.ogg</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>124.08743764172335</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7497fcf9-e7c5-4f9f-8171-05078d117861}</destination>
+		</relationship>
+	</object>
+</objects>
