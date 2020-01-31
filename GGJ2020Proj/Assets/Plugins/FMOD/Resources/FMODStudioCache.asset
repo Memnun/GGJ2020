@@ -17,6 +17,42 @@ MonoBehaviour:
   lastModified: 637160239580000000
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &-8512067466786383402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/GG2020FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637160911867157405
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-6992441189272537024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambience.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/GG2020FMOD/Build/Desktop/Ambience.bank
+  SubDir: 
+  lastModified: 637160911867157405
+  LoadResult: 0
+  FileSizes: []
   Exists: 1
 --- !u!114 &-1350208885074506575
 MonoBehaviour:
@@ -35,7 +71,7 @@ MonoBehaviour:
   lastModified: 637160239580000000
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50,16 +86,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 2308272623795635358}
-  - {fileID: -1350208885074506575}
-  - {fileID: -8853257365147778180}
-  - {fileID: 7722189716816184846}
+  - {fileID: -6992441189272537024}
+  - {fileID: -8512067466786383402}
+  - {fileID: 7891927636565892175}
   EditorEvents: []
   EditorParameters: []
   MasterBanks:
-  - {fileID: -8853257365147778180}
+  - {fileID: -8512067466786383402}
   StringsBanks:
   - {fileID: 2308272623795635358}
-  stringsBankWriteTime: 637160239580000000
+  stringsBankWriteTime: 637160911867157405
   cacheVersion: 3
 --- !u!114 &2308272623795635358
 MonoBehaviour:
@@ -75,7 +111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/FMOD/GG2020FMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637160239580000000
+  lastModified: 637160911867157405
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -96,6 +132,24 @@ MonoBehaviour:
   Path: Assets/FMOD/GG2020FMOD/Build/Desktop/Player.bank
   SubDir: 
   lastModified: 637160239580000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &7891927636565892175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Player.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/GG2020FMOD/Build/Desktop/Player.bank
+  SubDir: 
+  lastModified: 637160911867157405
   LoadResult: 0
   FileSizes: []
   Exists: 1
