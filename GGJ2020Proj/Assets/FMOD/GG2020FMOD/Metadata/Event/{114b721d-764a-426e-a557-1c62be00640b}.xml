@@ -4,7 +4,6 @@
 		<property name="name">
 			<value>ImpactMetal</value>
 		</property>
-		<property name="note" />
 		<property name="outputFormat">
 			<value>2</value>
 		</property>
@@ -151,7 +150,11 @@
 	</object>
 	<object class="MixerBusPanner" id="{4136ef5a-3a17-4a67-9d2c-a410622ec105}" />
 	<object class="MixerBusFader" id="{6a3547b9-32c5-4769-b002-a93884318324}" />
-	<object class="SpatialiserEffect" id="{cd936fcd-7d1a-4331-8263-8e9c450e026a}" />
+	<object class="SpatialiserEffect" id="{cd936fcd-7d1a-4331-8263-8e9c450e026a}">
+		<property name="extentMode">
+			<value>2</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{ef454fc3-a40c-487e-90c7-09523e4ffedd}" />
 	<object class="MixerBusFader" id="{ea068da8-eb91-4948-ab77-9e33e8151c02}" />
 </objects>
