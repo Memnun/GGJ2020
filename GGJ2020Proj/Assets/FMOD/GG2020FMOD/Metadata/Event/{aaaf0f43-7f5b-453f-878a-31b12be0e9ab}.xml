@@ -2,7 +2,11 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="Event" id="{aaaf0f43-7f5b-453f-878a-31b12be0e9ab}">
 		<property name="name">
-			<value>UINo</value>
+			<value>UIStart</value>
+		</property>
+		<property name="note">
+			<value>Make it a catapult sound
+</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>

@@ -2,8 +2,9 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="Event" id="{f078999f-2690-4fd7-8597-3800769caaed}">
 		<property name="name">
-			<value>IdleLoop</value>
+			<value>Pullback</value>
 		</property>
+		<property name="note" />
 		<property name="outputFormat">
 			<value>2</value>
 		</property>
@@ -83,7 +84,7 @@
 	<object class="MixerBusPanner" id="{075295e3-f84a-4a35-90f3-9fac76dc190f}" />
 	<object class="EventMixerGroup" id="{66967f44-d0a1-4c5a-af52-04414bc35bcb}">
 		<property name="name">
-			<value>Audio 1</value>
+			<value>Creaking</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{0289e07a-d445-4505-b75d-88e5397ccac7}</destination>

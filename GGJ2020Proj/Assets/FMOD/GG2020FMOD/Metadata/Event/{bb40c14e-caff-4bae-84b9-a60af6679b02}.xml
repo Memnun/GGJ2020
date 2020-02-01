@@ -83,7 +83,7 @@
 	<object class="MixerBusPanner" id="{b792fcd2-1a50-4bf9-886c-4721866a2b4e}" />
 	<object class="EventMixerGroup" id="{a9dfb321-821c-4df3-9e7f-3c7548ffc5db}">
 		<property name="name">
-			<value>Audio 1</value>
+			<value>Catapult Launch</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{45987c18-d0c8-4775-894a-e840fb43ed82}</destination>

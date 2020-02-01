@@ -83,7 +83,7 @@
 	<object class="MixerBusPanner" id="{8941165c-a6b5-4aff-8145-a51431279602}" />
 	<object class="EventMixerGroup" id="{6219b8c0-febb-4626-a5d5-351fa324e39e}">
 		<property name="name">
-			<value>Audio 1</value>
+			<value>Mousover</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{96e5106b-eb6f-419f-8da8-c0b7e524838f}</destination>
