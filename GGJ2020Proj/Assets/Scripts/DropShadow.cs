@@ -7,7 +7,6 @@ public class DropShadow : MonoBehaviour
 
     public Material ShadowMaterial;
     public SpriteRenderer Silhouette;
-    public Vector2 ShadowOffset;
     private GameObject shadowSprite;
     
     void Start()
@@ -24,7 +23,7 @@ public class DropShadow : MonoBehaviour
     
     void LateUpdate()
     {
-        shadowSprite.transform.localPosition = transform.localPosition + (Vector3)ShadowOffset;
+        shadowSprite.transform.localPosition = transform.localPosition + (Vector3)Camera.main.GetComponent<PlayerConstants>().shadowOffset;
         shadowSprite.transform.localRotation = transform.localRotation;
     }
 }
