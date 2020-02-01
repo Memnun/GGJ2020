@@ -36,10 +36,12 @@ public class DragControl : MonoBehaviour
 
     public void OnMouseUp()
     {
-        /*Vector2 dir = (Vector2) reticle.transform.position - startPos;
-        GetComponent<Rigidbody2D>().AddForce(Camera.main.GetComponent<PlayerConstants>().launchStrength * dir);
-        GetComponent<Rigidbody2D>().AddTorque(Random.Range(-150f, 150f));*/
+        Vector2 dir = (Vector2) reticle.transform.position - startPos;
+        GameObject ammo = Instantiate(Camera.main.GetComponent<PlayerConstants>().Furniture[0], transform.position,
+            Quaternion.identity);
+        ammo.GetComponent<Rigidbody2D>().AddForce(Camera.main.GetComponent<PlayerConstants>().launchStrength * dir);
+        ammo.GetComponent<Rigidbody2D>().AddTorque(Random.Range(-150f, 150f));
+        Camera.main.GetComponent<PlayerConstants>().Furniture.RemoveAt(0);
         Destroy(reticle);
-        //Destroy(this);
     }
 }

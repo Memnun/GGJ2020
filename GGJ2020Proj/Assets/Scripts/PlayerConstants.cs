@@ -8,7 +8,7 @@ public class PlayerConstants : MonoBehaviour
 
     public int Cash = 100;
     public int Swings = 0;
-    public List<int> Furniture = new List<int>();
+    public List<GameObject> Furniture = new List<GameObject>();
     public List<int> Upgrades = new List<int>();
     public Vector2 shadowOffset = new Vector2(0.1f, -0.1f);
     public float launchStrength = 500f;
