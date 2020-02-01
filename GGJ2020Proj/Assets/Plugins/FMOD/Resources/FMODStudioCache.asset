@@ -18,6 +18,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-8850427159879025348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/LevelAmbience.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/GG2020FMOD/Build/Desktop/LevelAmbience.bank
+  SubDir: 
+  lastModified: 637161078017294691
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-8512067466786383402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33,6 +51,58 @@ MonoBehaviour:
   Path: Assets/FMOD/GG2020FMOD/Build/Desktop/Master.bank
   SubDir: 
   lastModified: 637160911867157405
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-8169575567619821287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ImpactMetal/Impact Speed
+  m_EditorClassIdentifier: 
+  Name: Impact Speed
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-7733111660505464929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ImpactWood/Weight
+  m_EditorClassIdentifier: 
+  Name: Weight
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &-7712761050233547478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Menu.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/GG2020FMOD/Build/Desktop/Menu.bank
+  SubDir: 
+  lastModified: 637161078017344717
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -53,7 +123,169 @@ MonoBehaviour:
   lastModified: 637160911867157405
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &-6498355503532581772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/GG2020FMOD/Build/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637161078017354707
+  LoadResult: 0
+  FileSizes: []
   Exists: 1
+--- !u!114 &-5584807938839023938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/HouseJingle
+  m_EditorClassIdentifier: 
+  Path: event:/Music/HouseJingle
+  guid: 30726b18bc109142bbf0d2db5f8ce666
+  Banks:
+  - {fileID: -6498355503532581772}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-5555627711688808154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LaunchFlyLoop/Weight
+  m_EditorClassIdentifier: 
+  Name: Weight
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &-5167228688219633873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ImpactMetal/Weight
+  m_EditorClassIdentifier: 
+  Name: Weight
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &-4938527316728348715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Tossibles.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/GG2020FMOD/Build/Desktop/Tossibles.bank
+  SubDir: 
+  lastModified: 637161078017364816
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-4707509452463025453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Projectiles/HoleIn
+  m_EditorClassIdentifier: 
+  Path: event:/Projectiles/HoleIn
+  guid: c8f6f5a98ac9244fb6b9f6f301b554be
+  Banks:
+  - {fileID: -4938527316728348715}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3119575405562257121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/UIMouseover
+  m_EditorClassIdentifier: 
+  Path: event:/UI/UIMouseover
+  guid: a12e18232091534fb9f366237d683b22
+  Banks:
+  - {fileID: 5325895873242929365}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-2242452424767443898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Catapult/IdleLoop
+  m_EditorClassIdentifier: 
+  Path: event:/Catapult/IdleLoop
+  guid: 9f9978f09026d74f85973800769caaed
+  Banks:
+  - {fileID: 8054882312857051832}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-1350208885074506575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,6 +304,29 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-182708002713146955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Catapult/Launch
+  m_EditorClassIdentifier: 
+  Path: event:/Catapult/Launch
+  guid: 4ec140bbffcaae4b84b9a60af6679b02
+  Banks:
+  - {fileID: 8054882312857051832}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,17 +341,123 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 2308272623795635358}
-  - {fileID: -6992441189272537024}
-  - {fileID: -8512067466786383402}
-  - {fileID: 7891927636565892175}
-  EditorEvents: []
-  EditorParameters: []
+  - {fileID: -8850427159879025348}
+  - {fileID: 6336039628442223168}
+  - {fileID: -7712761050233547478}
+  - {fileID: -6498355503532581772}
+  - {fileID: 8054882312857051832}
+  - {fileID: -4938527316728348715}
+  - {fileID: 5325895873242929365}
+  EditorEvents:
+  - {fileID: 4171054599096412905}
+  - {fileID: -5584807938839023938}
+  - {fileID: 3058540442960188529}
+  - {fileID: -182708002713146955}
+  - {fileID: -2242452424767443898}
+  - {fileID: 297343673635575624}
+  - {fileID: 634307552381365736}
+  - {fileID: 3670658397045240232}
+  - {fileID: 3223285350048230824}
+  - {fileID: -4707509452463025453}
+  - {fileID: 704727484753638591}
+  - {fileID: 4967939001566906615}
+  - {fileID: -3119575405562257121}
+  EditorParameters:
+  - {fileID: 4949406276875877183}
   MasterBanks:
-  - {fileID: -8512067466786383402}
+  - {fileID: 6336039628442223168}
   StringsBanks:
   - {fileID: 2308272623795635358}
-  stringsBankWriteTime: 637160911867157405
+  stringsBankWriteTime: 637161078017324709
   cacheVersion: 3
+--- !u!114 &297343673635575624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Catapult/Ammo
+  m_EditorClassIdentifier: 
+  Path: event:/Catapult/Ammo
+  guid: a0234587ac3eee499cc5fd6dccb8d868
+  Banks:
+  - {fileID: 8054882312857051832}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &634307552381365736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Projectiles/ImpactMetal
+  m_EditorClassIdentifier: 
+  Path: event:/Projectiles/ImpactMetal
+  guid: 1d724b114a766e42a5571c62be00640b
+  Banks:
+  - {fileID: -4938527316728348715}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -8169575567619821287}
+  - {fileID: -5167228688219633873}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &704727484753638591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/UINo
+  m_EditorClassIdentifier: 
+  Path: event:/UI/UINo
+  guid: 430fafaa5b7f3f45878a31b12be0e9ab
+  Banks:
+  - {fileID: 5325895873242929365}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &2133345752050330138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ImpactWood/Impact Speed
+  m_EditorClassIdentifier: 
+  Name: Impact Speed
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &2308272623795635358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,11 +472,182 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/FMOD/GG2020FMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637160911867157405
+  lastModified: 637161078017324709
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 776
+    Value: 1706
+  Exists: 1
+--- !u!114 &3058540442960188529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/MusicLevel
+  m_EditorClassIdentifier: 
+  Path: event:/Music/MusicLevel
+  guid: 6efa86536e374d4d8ddc657f52f537c8
+  Banks:
+  - {fileID: -6498355503532581772}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &3223285350048230824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Projectiles/ImpactWood
+  m_EditorClassIdentifier: 
+  Path: event:/Projectiles/ImpactWood
+  guid: 586fc5ac705e9f41b214132b0bb51b2d
+  Banks:
+  - {fileID: -4938527316728348715}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 2133345752050330138}
+  - {fileID: -7733111660505464929}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3670658397045240232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Projectiles/Whoosh/LaunchFlyLoop
+  m_EditorClassIdentifier: 
+  Path: event:/Projectiles/Whoosh/LaunchFlyLoop
+  guid: 43dd68782e3cbf468e48f79bd79115c2
+  Banks:
+  - {fileID: -4938527316728348715}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -5555627711688808154}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4171054599096412905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/MusicMenu
+  m_EditorClassIdentifier: 
+  Path: event:/Music/MusicMenu
+  guid: 805452d0396c8b4d963a341931ea6e61
+  Banks:
+  - {fileID: -7712761050233547478}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &4949406276875877183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: MusicIntensity
+  m_EditorClassIdentifier: 
+  Name: MusicIntensity
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
+--- !u!114 &4967939001566906615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/UIYes
+  m_EditorClassIdentifier: 
+  Path: event:/UI/UIYes
+  guid: 6d91cae367159c40b94bf546d8898ae5
+  Banks:
+  - {fileID: 5325895873242929365}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &5325895873242929365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/UI.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/GG2020FMOD/Build/Desktop/UI.bank
+  SubDir: 
+  lastModified: 637161078017374887
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &6336039628442223168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/GG2020FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637161078017314697
+  LoadResult: 0
+  FileSizes: []
   Exists: 1
 --- !u!114 &7722189716816184846
 MonoBehaviour:
@@ -150,6 +682,24 @@ MonoBehaviour:
   Path: Assets/FMOD/GG2020FMOD/Build/Desktop/Player.bank
   SubDir: 
   lastModified: 637160911867157405
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &8054882312857051832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Player.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/GG2020FMOD/Build/Desktop/Player.bank
+  SubDir: 
+  lastModified: 637161078017364816
   LoadResult: 0
   FileSizes: []
   Exists: 1
