@@ -117,7 +117,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{a9dfb321-821c-4df3-9e7f-3c7548ffc5db}">
 		<property name="volume">
-			<value>-3.5</value>
+			<value>-8.5</value>
 		</property>
 		<property name="name">
 			<value>Catapult Launch</value>
@@ -205,7 +205,14 @@
 	</object>
 	<object class="MixerBusPanner" id="{cd7ddfe8-789c-4404-af98-a7df6ea0c35a}" />
 	<object class="MixerBusFader" id="{30c926fb-9f9d-4a1c-8b75-44bdb2b8f495}" />
-	<object class="SpatialiserEffect" id="{1bc63631-73d5-420d-a99c-b9176fbe071d}" />
+	<object class="SpatialiserEffect" id="{1bc63631-73d5-420d-a99c-b9176fbe071d}">
+		<property name="minimumDistance">
+			<value>0</value>
+		</property>
+		<property name="maximumDistance">
+			<value>9.14999962</value>
+		</property>
+	</object>
 	<object class="AutomationPoint" id="{b9525840-1116-4c47-accf-7f94ce6a4d3d}">
 		<property name="position">
 			<value>1</value>

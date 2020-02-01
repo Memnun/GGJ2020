@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="Event" id="{e3ca916d-1567-409c-b94b-f546d8898ae5}">
 		<property name="name">
-			<value>UIYes</value>
+			<value>UIClick</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>

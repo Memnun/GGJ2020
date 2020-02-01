@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{becdb6b0-cb74-4071-9f80-a827896541f5}">
+		<property name="assetPath">
+			<value>Amb_Countryside_Day_Flying_Insects_Birds_LP.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>120</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8dc34f17-e20c-410e-a1cd-65e05c528e21}</destination>
+		</relationship>
+	</object>
+</objects>

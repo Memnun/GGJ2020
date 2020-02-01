@@ -2,10 +2,10 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="Event" id="{feefbd7c-6c7d-49d7-aabf-c5e5d7962745}">
 		<property name="name">
-			<value>Moneyget</value>
+			<value>UIMoneyget</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{93fe87dc-2258-4229-8e01-b907a7b3e934}</destination>
@@ -59,11 +59,18 @@
 	<object class="EventAutomatableProperties" id="{b97f587e-38cb-4906-a2da-40f3f6ab241e}" />
 	<object class="MarkerTrack" id="{a51c2675-e9e5-46df-a263-1fb7ff98b8c6}" />
 	<object class="GroupTrack" id="{179670fd-b041-4405-81f1-6d94f9a077d7}">
+		<relationship name="modules">
+			<destination>{8a7ead8e-8974-49d4-be2a-24c587af62a5}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{37e7ab77-4ae1-4fa5-b1a8-355fba11f737}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{418a092a-c3de-4de9-8e87-add9b7711a51}" />
+	<object class="Timeline" id="{418a092a-c3de-4de9-8e87-add9b7711a51}">
+		<relationship name="modules">
+			<destination>{8a7ead8e-8974-49d4-be2a-24c587af62a5}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{84bac647-a544-4bca-803e-9fa1c9edb52b}">
 		<relationship name="effectChain">
 			<destination>{037e9e6b-e91c-4caf-a776-c6c6d679c906}</destination>
@@ -81,6 +88,24 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{01793e33-cdef-4dfd-9259-be9e8b4d7973}" />
+	<object class="MultiSound" id="{8a7ead8e-8974-49d4-be2a-24c587af62a5}">
+		<property name="length">
+			<value>0.9090625</value>
+		</property>
+		<property name="playlistMode">
+			<value>1</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{7440c20a-edff-4a3e-966a-67682ed4581c}</destination>
+		</relationship>
+		<relationship name="sounds">
+			<destination>{c2070a24-44e7-46f6-9ce9-dca68e06fd17}</destination>
+			<destination>{4f10180d-c890-4e22-b2f3-403d3ffdccf6}</destination>
+			<destination>{3e60cb2c-1ef9-4d58-b47f-9238b87f28c3}</destination>
+			<destination>{a1729dfe-659e-433f-828e-0da6a61f9620}</destination>
+			<destination>{28a2d593-aafe-4af7-aae5-a8f925e91de3}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{37e7ab77-4ae1-4fa5-b1a8-355fba11f737}">
 		<property name="name">
 			<value>Audio 1</value>
@@ -102,6 +127,39 @@
 	</object>
 	<object class="MixerBusPanner" id="{41b3cfa9-bf85-4d30-800d-109b6581115f}" />
 	<object class="MixerBusFader" id="{8971cede-d9cf-4959-a8f3-0f3b04a43fc7}" />
+	<object class="RandomizerModulator" id="{7440c20a-edff-4a3e-966a-67682ed4581c}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>6.5</value>
+		</property>
+	</object>
+	<object class="SingleSound" id="{c2070a24-44e7-46f6-9ce9-dca68e06fd17}">
+		<relationship name="audioFile">
+			<destination>{03718164-e394-4176-bb93-3e79ab1625a4}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{4f10180d-c890-4e22-b2f3-403d3ffdccf6}">
+		<relationship name="audioFile">
+			<destination>{9de57594-9d7e-4108-b324-37f38611f161}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{3e60cb2c-1ef9-4d58-b47f-9238b87f28c3}">
+		<relationship name="audioFile">
+			<destination>{82b7f906-72eb-42c3-81e1-bd3a2541f541}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{a1729dfe-659e-433f-828e-0da6a61f9620}">
+		<relationship name="audioFile">
+			<destination>{d2eb399d-95fd-4349-99b3-ed3c21f79d82}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{28a2d593-aafe-4af7-aae5-a8f925e91de3}">
+		<relationship name="audioFile">
+			<destination>{3b20fdbc-1cba-4449-98a2-d37f4294219d}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{52370f47-2b55-45ee-98dd-cc326243268d}">
 		<relationship name="effects">
 			<destination>{38f40abf-65f8-45a6-abc2-ac5edd75eb8f}</destination>

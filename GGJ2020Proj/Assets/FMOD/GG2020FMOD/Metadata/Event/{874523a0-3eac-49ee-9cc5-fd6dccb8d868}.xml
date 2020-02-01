@@ -4,6 +4,9 @@
 		<property name="name">
 			<value>Ammo</value>
 		</property>
+		<property name="note">
+			<value>Attach to camera snapback</value>
+		</property>
 		<property name="outputFormat">
 			<value>2</value>
 		</property>
