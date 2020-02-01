@@ -67,3 +67,6 @@ FmodProject/.cache/
 # random things
 .idea/
 GGJ2020Proj/[Ll]ibrary/*
+GGJ2020Proj/Assets/Plugins/FMOD/Resources/FMODStudioCache.asset
+GGJ2020Proj/fmod_editor.log
+GGJ2020Proj/Assets/Plugins/FMOD/Resources/FMODStudioCache.asset.meta
