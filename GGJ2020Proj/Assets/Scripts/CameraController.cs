@@ -1,17 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
 
     public GameObject followTarget;
-    public BoxCollider2D cameraBounds;
+    public Vector4 bounds;
     private GameObject defaultTarget;
-    public bool isFollowing;
-    private bool isFollowingFrameBuff;
-    private float launchtime;
-    
+    private bool framedelay;
     void Awake()
     {
         transform.position = followTarget.transform.position + new Vector3(0, 0, -100f);
@@ -20,33 +18,31 @@ public class CameraController : MonoBehaviour
     void Start()
     {
         defaultTarget = followTarget;
-        isFollowing = false;
-        isFollowingFrameBuff = false;
-        launchtime = 0;
+        framedelay = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         //////////// CAMERA TRACKING //////////////
-        if (followTarget.transform.position.x < -90f)
+        if (followTarget.transform.position.x < bounds.x)
         {
-            transform.position = new Vector3(-90f, transform.position.y, -10f);
-        } else if (followTarget.transform.position.x > 90f)
+            transform.position = new Vector3(bounds.x, transform.position.y, -10f);
+        } else if (followTarget.transform.position.x > bounds.y)
         {
-            transform.position = new Vector3(90f, transform.position.y, -10f);
+            transform.position = new Vector3(bounds.y, transform.position.y, -10f);
         }
         else
         {
             transform.position = new Vector3(followTarget.transform.position.x, transform.position.y, -10f);
         }
 
-        if (followTarget.transform.position.y < 15f)
+        if (followTarget.transform.position.y < bounds.z)
         {
-            transform.position = new Vector3(transform.position.x, 15f, -10f);
-        } else if (followTarget.transform.position.y > 85f)
+            transform.position = new Vector3(transform.position.x, bounds.z, -10f);
+        } else if (followTarget.transform.position.y > bounds.w)
         {
-            transform.position = new Vector3(transform.position.x, 85f, -10f);
+            transform.position = new Vector3(transform.position.x, bounds.w, -10f);
         }
         else
         {
@@ -54,10 +50,20 @@ public class CameraController : MonoBehaviour
         }
         
         ///////////////// TARGET SWITCHING ///////////////////
-        if (isFollowing && !isFollowingFrameBuff)
+        if (followTarget != defaultTarget)
         {
-            launchtime = Time.time;
-            isFollowingFrameBuff = isFollowing;
+            if (framedelay == false)
+            {
+                framedelay = true;
+            }
+            else
+            {
+                if (followTarget.GetComponent<Rigidbody2D>().velocity.magnitude < 0.05f)
+                {
+                    followTarget = defaultTarget;
+                    framedelay = false;
+                }
+            }
         }
         
     }
