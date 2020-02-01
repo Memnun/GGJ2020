@@ -9,7 +9,7 @@ public class CameraController : MonoBehaviour
     public GameObject followTarget;
     public Vector4 bounds;
     private GameObject defaultTarget;
-    private bool framedelay;
+    private int framedelay;
     void Awake()
     {
         transform.position = followTarget.transform.position + new Vector3(0, 0, -100f);
@@ -18,7 +18,7 @@ public class CameraController : MonoBehaviour
     void Start()
     {
         defaultTarget = followTarget;
-        framedelay = false;
+        framedelay = 0;
     }
 
     // Update is called once per frame
@@ -52,16 +52,16 @@ public class CameraController : MonoBehaviour
         ///////////////// TARGET SWITCHING ///////////////////
         if (followTarget != defaultTarget)
         {
-            if (framedelay == false)
+            if (framedelay < 5)
             {
-                framedelay = true;
+                framedelay++;
             }
             else
             {
                 if (followTarget.GetComponent<Rigidbody2D>().velocity.magnitude < 0.05f)
                 {
                     followTarget = defaultTarget;
-                    framedelay = false;
+                    framedelay = 0;
                 }
             }
         }
