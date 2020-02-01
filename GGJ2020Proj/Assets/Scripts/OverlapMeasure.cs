@@ -9,8 +9,8 @@ public class OverlapMeasure : MonoBehaviour
 {
 
     public List<Vector2> raypoints;
-    public SpriteRenderer b;
-    public Collider2D c;
+    public SpriteRenderer Renderer;
+    public Collider2D coll;
     public int overlapCount;
     
     // Start is called before the first frame update
@@ -19,17 +19,17 @@ public class OverlapMeasure : MonoBehaviour
         raypoints = new List<Vector2>();
         while (raypoints.Count < 100)
         {
-            Vector3 bmin = b.sprite.bounds.min;
-            Vector3 bmax = b.sprite.bounds.max;
+            Vector3 bmin = Renderer.sprite.bounds.min;
+            Vector3 bmax = Renderer.sprite.bounds.max;
             Vector3 randomPoint = transform.TransformPoint(new Vector3(Random.Range(bmin.x,bmax.x), Random.Range(bmin.y,bmax.y), 0));
             raypoints.Add(new Vector2(randomPoint.x, randomPoint.y));
-            if (Physics2D.OverlapPoint(raypoints[raypoints.Count - 1]) != c)
+            if (Physics2D.OverlapPoint(raypoints[raypoints.Count - 1]) != coll)
             {
                 raypoints.Remove(raypoints[raypoints.Count - 1]);
             }
         }
 
-        c.enabled = !c.enabled;
+        coll.enabled = !coll.enabled;
     }
 
     // Update is called once per frame
