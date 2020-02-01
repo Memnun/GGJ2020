@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6410753311397828350}
   - component: {fileID: 8962217844910632245}
-  - component: {fileID: 3451667084685649206}
   - component: {fileID: 5979817351574457762}
   - component: {fileID: 5844781360826025041}
   - component: {fileID: 6432143947714122943}
@@ -84,19 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3451667084685649206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2483611463725112455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 780549248f99d435388fb72ad43b7681, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reticleSprite: {fileID: 21300000, guid: 1724baa84df614ea5929ae3260d3b0af, type: 3}
 --- !u!114 &5979817351574457762
 MonoBehaviour:
   m_ObjectHideFlags: 0
