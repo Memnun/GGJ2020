@@ -248,11 +248,14 @@
 	</object>
 	<object class="SingleSound" id="{da467220-65b4-4e6a-b853-cbc53e368fb5}">
 		<property name="length">
-			<value>4.0081300813008127</value>
+			<value>2.0200542005420044</value>
 		</property>
 		<property name="timelockedOffset">
 			<value>11.991869918699187</value>
 		</property>
+		<relationship name="fadeOutCurve">
+			<destination>{2d9f26f0-5086-4ef3-9c48-1f88ebe3f5e7}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{14401bcc-6591-4c17-9589-8d2cc9d4f513}</destination>
 		</relationship>
@@ -622,6 +625,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{8a225092-0c6e-49f2-baf1-c3ecd2fec51c}" />
+	<object class="FadeCurve" id="{2d9f26f0-5086-4ef3-9c48-1f88ebe3f5e7}">
+		<relationship name="startPoint">
+			<destination>{df99e3a9-c96f-4545-bc38-d0ab9b70b891}</destination>
+		</relationship>
+		<relationship name="endPoint">
+			<destination>{6ff90bff-c26c-4d70-a0c4-2279a0b089c2}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{0e6be3c6-1e9b-4d1e-ad5a-ab9a9a7e1d04}">
 		<relationship name="effects">
 			<destination>{17081e59-c905-4cb8-b37a-81d317122061}</destination>
@@ -703,6 +714,25 @@
 	</object>
 	<object class="MixerBusFader" id="{af453aa4-9056-4213-a8e5-5690a514ab8e}" />
 	<object class="MixerBusFader" id="{763ae999-103d-4fe4-8926-ff2e7f672949}" />
+	<object class="AutomationPoint" id="{df99e3a9-c96f-4545-bc38-d0ab9b70b891}">
+		<property name="position">
+			<value>1.5</value>
+		</property>
+		<property name="value">
+			<value>1</value>
+		</property>
+		<property name="curveShape">
+			<value>0.25471893</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{6ff90bff-c26c-4d70-a0c4-2279a0b089c2}">
+		<property name="position">
+			<value>2.0200542005420044</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{17081e59-c905-4cb8-b37a-81d317122061}" />
 	<object class="MixerBusFader" id="{d01e175c-bf1e-4a39-bbc6-b6c91395b818}" />
 	<object class="HighpassEffect" id="{1a7fd892-6275-47ea-a064-9cee2db793a6}">
