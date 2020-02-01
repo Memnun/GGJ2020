@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{5fc82ea0-c439-451b-928b-a3947c310374}">
+		<property name="name">
+			<value>WhooshDistortion</value>
+		</property>
+		<relationship name="folder">
+			<destination>{a73ee5fd-811c-4f96-b4d2-37d2754e111c}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{2f34399f-4090-4556-bb66-fe3ef68a1c37}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{2f34399f-4090-4556-bb66-fe3ef68a1c37}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="velocity">
+			<value>-2.4000000953674316</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.61000001430511475</value>
+		</property>
+		<property name="seekSpeedAsymmetric">
+			<value>true</value>
+		</property>
+	</object>
+</objects>
