@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3152411068306628692}
   - component: {fileID: 1111440806748794753}
   - component: {fileID: 4333369948509163858}
-  - component: {fileID: 2861802142507189298}
   - component: {fileID: 8960225005750056115}
   - component: {fileID: 4731944557900125394}
+  - component: {fileID: 2569783659450591090}
   m_Layer: 0
   m_Name: BrownTable
   m_TagString: Untagged
@@ -73,12 +73,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0bdaad9c11c445e4b896ce84611fc096, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ca80d128045734cb2ac4f27e8886861a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 18, y: 18}
+  m_Size: {x: 5.4, y: 5.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -98,19 +98,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShadowMaterial: {fileID: 2100000, guid: 7e681a0000e60fd4fb63903280afe8ab, type: 2}
   Silhouette: {fileID: 1111440806748794753}
---- !u!114 &2861802142507189298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1580847907840478559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db92da3cd1494de4b99abcfafc704f9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reticleSprite: {fileID: 21300000, guid: 61f1bb4b1329a804e887772867af342b, type: 3}
 --- !u!50 &8960225005750056115
 Rigidbody2D:
   serializedVersion: 4
@@ -141,7 +128,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 1580847907840478559}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: a3cd55f579e8d2546b72562ab53d4f25, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -150,7 +137,7 @@ PolygonCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 5.4, y: 5.4}
-    newSize: {x: 18, y: 18}
+    newSize: {x: 5.4, y: 5.4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -216,3 +203,16 @@ PolygonCollider2D:
       - {x: 0.35999998, y: -0.96}
       - {x: 0.59, y: -0.89}
       - {x: 0.71, y: -0.83}
+--- !u!114 &2569783659450591090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580847907840478559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780549248f99d435388fb72ad43b7681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reticleSprite: {fileID: 21300000, guid: 1724baa84df614ea5929ae3260d3b0af, type: 3}
