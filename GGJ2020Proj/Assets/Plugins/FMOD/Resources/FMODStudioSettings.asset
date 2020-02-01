@@ -79,7 +79,11 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
-  - Ambience
+  - LevelAmbience
+  - Menu
+  - Music
   - Player
+  - Tossibles
+  - UI
   BanksToLoad: []
   LiveUpdatePort: 9264
