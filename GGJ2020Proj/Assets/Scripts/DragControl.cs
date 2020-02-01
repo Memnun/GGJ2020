@@ -31,13 +31,14 @@ public class DragControl : MonoBehaviour
             dir = dir.normalized * radius;
         
         reticle.transform.position = startPos + dir;
+        transform.eulerAngles = new Vector3(0, 0, Vector2.SignedAngle(Vector2.right, dir.normalized));
     }
 
     public void OnMouseUp()
     {
-        Vector2 dir = (Vector2) reticle.transform.position - startPos;
+        /*Vector2 dir = (Vector2) reticle.transform.position - startPos;
         GetComponent<Rigidbody2D>().AddForce(Camera.main.GetComponent<PlayerConstants>().launchStrength * dir);
-        GetComponent<Rigidbody2D>().AddTorque(Random.Range(-150f, 150f));
+        GetComponent<Rigidbody2D>().AddTorque(Random.Range(-150f, 150f));*/
         Destroy(reticle);
         //Destroy(this);
     }
