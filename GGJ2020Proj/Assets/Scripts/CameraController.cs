@@ -10,7 +10,7 @@ public class CameraController : MonoBehaviour
 
     public GameObject followTarget;
     public Vector4 bounds;
-    private GameObject defaultTarget;
+    public GameObject defaultTarget;
     private int framedelay;
     void Awake()
     {
