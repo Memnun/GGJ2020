@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using FMODUnity;
+using FMOD.Studio;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
@@ -62,9 +64,16 @@ public class CameraController : MonoBehaviour
                 {
                     followTarget = defaultTarget;
                     framedelay = 0;
+                    GameObject.Find("CannonBody").GetComponent<LevelSound>().reloaded = true;
+                    GetComponent<GlobalSounds>().MusicIntensity = 0;
                 }
             }
         }
+        
+        GameObject.Find("CannonBody").GetComponent<LevelSound>().ambienceWoosh
+            .setParameterByName("LevelPosition", followTarget.GetComponent<Rigidbody2D>().velocity.magnitude*1.0f);
+        
+        
         
     }
 }

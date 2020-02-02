@@ -260,6 +260,8 @@ GameObject:
   - component: {fileID: 159890608}
   - component: {fileID: 159890610}
   - component: {fileID: 159890609}
+  - component: {fileID: 159890611}
+  - component: {fileID: 159890612}
   m_Layer: 0
   m_Name: CannonWheel
   m_TagString: Untagged
@@ -344,6 +346,47 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &159890611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159890607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9468c5f457ace64f8d4df6d642b107f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LoadEvent: 1
+  UnloadEvent: 2
+  Banks:
+  - LevelAmbience
+  - Player
+  - Tossibles
+  CollisionTag: 
+  PreloadSamples: 0
+--- !u!50 &159890612
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159890607}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &486649886
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,6 +787,8 @@ GameObject:
   - component: {fileID: 853480873}
   - component: {fileID: 853480872}
   - component: {fileID: 853480875}
+  - component: {fileID: 853480876}
+  - component: {fileID: 853480879}
   m_Layer: 0
   m_Name: CannonBody
   m_TagString: Untagged
@@ -1235,6 +1280,41 @@ PolygonCollider2D:
       - {x: -5.7588377, y: -2.254098}
       - {x: -5.6988378, y: -2.234098}
       - {x: -5.678838, y: -2.224098}
+--- !u!114 &853480876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853480870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b5e761ffd2c7f40a0d0729178ff04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fired: 0
+  reloaded: 0
+  firestate: 0
+--- !u!114 &853480879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853480870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9468c5f457ace64f8d4df6d642b107f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LoadEvent: 1
+  UnloadEvent: 2
+  Banks:
+  - LevelAmbience
+  - Player
+  - Tossibles
+  CollisionTag: 
+  PreloadSamples: 0
 --- !u!1 &957163518
 GameObject:
   m_ObjectHideFlags: 0
@@ -1766,6 +1846,7 @@ GameObject:
   - component: {fileID: 1954510041}
   - component: {fileID: 1954510042}
   - component: {fileID: 1954510043}
+  - component: {fileID: 1954510044}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1878,6 +1959,7 @@ MonoBehaviour:
   Banks:
   - Master
   - Master.strings
+  - Music
   CollisionTag: 
   PreloadSamples: 0
 --- !u!114 &1954510042
@@ -1907,6 +1989,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followTarget: {fileID: 159890607}
   bounds: {x: -90, y: 90, z: 15, w: 85}
+--- !u!114 &1954510044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954510036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eddc7df1b219b324facce4c6d5490a35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MusicIntensity: 0
+  Win: 0
 --- !u!1 &2087139675
 GameObject:
   m_ObjectHideFlags: 0

@@ -51,6 +51,8 @@ public class DragControl : MonoBehaviour
             ammo.GetComponent<Rigidbody2D>().AddTorque(Random.Range(-150f, 150f));
             Camera.main.GetComponent<CameraController>().followTarget = ammo;
             Camera.main.GetComponent<PlayerConstants>().Furniture.RemoveAt(0);
+            GetComponent<LevelSound>().fired = true;
+            Camera.main.GetComponent<GlobalSounds>().MusicIntensity = 1;
         }
         Destroy(reticle);
     }
