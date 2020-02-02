@@ -16,7 +16,7 @@ MonoBehaviour:
   HasSourceProject: 1
   HasPlatforms: 1
   sourceProjectPath: Assets/FMOD/GG2020FMOD/GG2020FMOD.fspro
-  sourceBankPath: Assets\FMOD\GG2020FMOD\Build
+  sourceBankPath: Assets/FMOD/GG2020FMOD/Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 0
   BankLoadType: 2
@@ -41,7 +41,7 @@ MonoBehaviour:
   - Platform: 1
     Value: 0
   - Platform: 2
-    Value: 0
+    Value: 1
   - Platform: 20
     Value: 0
   OverlaySettings:
