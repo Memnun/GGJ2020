@@ -268,6 +268,7 @@
 		<relationship name="effects">
 			<destination>{211171f7-4767-47c9-8d7f-347f3d31becf}</destination>
 			<destination>{38f581c4-9179-4830-8f78-b40fb336e4d8}</destination>
+			<destination>{9def9104-d707-42ce-956e-5ebd062cd9db}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{b248b8c7-c6d1-499e-8c6c-e3deb26a3e09}" />
@@ -367,6 +368,17 @@
 		<property name="extentMode">
 			<value>2</value>
 		</property>
+	</object>
+	<object class="MixerSend" id="{9def9104-d707-42ce-956e-5ebd062cd9db}">
+		<property name="level">
+			<value>0</value>
+		</property>
+		<property name="inputFormat">
+			<value>2</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{e82d0f72-4537-442d-88c5-b5c07208c512}</destination>
+		</relationship>
 	</object>
 	<object class="AutomationCurve" id="{159a94eb-aa45-4f73-9ae2-6aaa62fab02a}">
 		<relationship name="parameter">
