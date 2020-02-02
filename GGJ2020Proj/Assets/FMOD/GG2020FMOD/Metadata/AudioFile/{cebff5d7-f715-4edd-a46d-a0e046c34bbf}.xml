@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{cebff5d7-f715-4edd-a46d-a0e046c34bbf}">
+		<property name="assetPath">
+			<value>clap2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.125</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8dc34f17-e20c-410e-a1cd-65e05c528e21}</destination>
+		</relationship>
+	</object>
+</objects>
