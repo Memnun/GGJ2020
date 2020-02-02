@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class ButtonBehaviors : MonoBehaviour
@@ -46,6 +47,24 @@ public class ButtonBehaviors : MonoBehaviour
         {
             player.Cash -= 100;
             player.Furniture.Add(player.ammotypes[furnitureType]);
+        }
+    }
+
+    public void returnToLevel()
+    {
+        switch (player.currentLevel)
+        {
+            case 1:
+                SceneManager.LoadScene("LVLTwo_Rooms", LoadSceneMode.Single);
+                Camera.main.GetComponent<GlobalSounds>().MusicIntensity = 0;
+                break;
+            case 2:
+                SceneManager.LoadScene("LVLFour_Rooms", LoadSceneMode.Single);
+                Camera.main.GetComponent<GlobalSounds>().MusicIntensity = 0;
+                break;
+            default:
+                Application.Quit(94537);
+                break;
         }
     }
     

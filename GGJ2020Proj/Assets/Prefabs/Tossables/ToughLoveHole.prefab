@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7358827863428333979}
   m_Layer: 0
   m_Name: ToughLoveHole
-  m_TagString: Untagged
+  m_TagString: hole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -207,6 +207,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   raypoints: []
-  Renderer: {fileID: 4037600353780789294}
-  coll: {fileID: 2102003806553573796}
   overlapCount: 0

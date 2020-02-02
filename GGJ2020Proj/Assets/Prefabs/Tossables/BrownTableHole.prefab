@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6615930043268871590}
   m_Layer: 0
   m_Name: BrownTableHole
-  m_TagString: Untagged
+  m_TagString: hole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -201,6 +201,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   raypoints: []
-  Renderer: {fileID: 416371312179332115}
-  coll: {fileID: 2370194068591459737}
   overlapCount: 0

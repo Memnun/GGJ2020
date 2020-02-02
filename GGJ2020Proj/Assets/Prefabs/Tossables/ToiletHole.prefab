@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1734620192845344758}
   m_Layer: 0
   m_Name: ToiletHole
-  m_TagString: Untagged
+  m_TagString: hole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1761192973541145430}
   m_Layer: 0
   m_Name: BrownChairHole
-  m_TagString: Untagged
+  m_TagString: hole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -226,6 +226,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   raypoints: []
-  Renderer: {fileID: 5072950385219046115}
-  coll: {fileID: 7153154426987148137}
   overlapCount: 0

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5974116743844241758}
   m_Layer: 0
   m_Name: RefrigeratorHole
-  m_TagString: Untagged
+  m_TagString: hole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,6 +127,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   raypoints: []
-  Renderer: {fileID: 855682119083921602}
-  coll: {fileID: 3385685647470356808}
   overlapCount: 0

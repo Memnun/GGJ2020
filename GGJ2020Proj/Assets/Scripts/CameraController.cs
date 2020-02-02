@@ -26,35 +26,52 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (followTarget == null)
+        {
+            GameObject x = GameObject.Find("CannonWheel");
+            if (x != null)
+            {
+                followTarget = x;
+            }
+        }
+        if (defaultTarget == null)
+        {
+            GameObject x = GameObject.Find("CannonWheel");
+            if (x != null)
+            {
+                defaultTarget = x;
+            }
+        }
         //////////// CAMERA TRACKING //////////////
-        if (followTarget.transform.position.x < bounds.x)
-        {
-            transform.position = new Vector3(bounds.x, transform.position.y, -10f);
-        } else if (followTarget.transform.position.x > bounds.y)
-        {
-            transform.position = new Vector3(bounds.y, transform.position.y, -10f);
-        }
-        else
-        {
-            transform.position = new Vector3(followTarget.transform.position.x, transform.position.y, -10f);
-        }
+            if (followTarget.transform.position.x < bounds.x)
+            {
+                transform.position = new Vector3(bounds.x, transform.position.y, -10f);
+            }
+            else if (followTarget.transform.position.x > bounds.y)
+            {
+                transform.position = new Vector3(bounds.y, transform.position.y, -10f);
+            }
+            else
+            {
+                transform.position = new Vector3(followTarget.transform.position.x, transform.position.y, -10f);
+            }
 
-        if (followTarget.transform.position.y < bounds.z)
-        {
-            transform.position = new Vector3(transform.position.x, bounds.z, -10f);
-        } else if (followTarget.transform.position.y > bounds.w)
-        {
-            transform.position = new Vector3(transform.position.x, bounds.w, -10f);
-        }
-        else
-        {
-            transform.position = new Vector3(transform.position.x, followTarget.transform.position.y, -10f);
-        }
-        
-        ///////////////// TARGET SWITCHING ///////////////////
+            if (followTarget.transform.position.y < bounds.z)
+            {
+                transform.position = new Vector3(transform.position.x, bounds.z, -10f);
+            }
+            else if (followTarget.transform.position.y > bounds.w)
+            {
+                transform.position = new Vector3(transform.position.x, bounds.w, -10f);
+            }
+            else
+            {
+                transform.position = new Vector3(transform.position.x, followTarget.transform.position.y, -10f);
+            }
+            ///////////////// TARGET SWITCHING ///////////////////
         if (followTarget != defaultTarget)
         {
-            if (framedelay < 5)
+            if (framedelay < 60)
             {
                 framedelay++;
             }
@@ -67,15 +84,6 @@ public class CameraController : MonoBehaviour
                     GameObject.Find("CannonBody").GetComponent<LevelSound>().reloaded = true;
                     GetComponent<GlobalSounds>().MusicIntensity = 0;
                 }
-            }
-        }
-
-        if (defaultTarget == null)
-        {
-            GameObject x = GameObject.Find("CannonWheel");
-            if (x != null)
-            {
-                defaultTarget = x;
             }
         }
 

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3348757956740178600}
   m_Layer: 0
   m_Name: PaintingHole
-  m_TagString: Untagged
+  m_TagString: hole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,6 +124,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   raypoints: []
-  Renderer: {fileID: 3794260115647985411}
-  coll: {fileID: 1262215206216142473}
   overlapCount: 0

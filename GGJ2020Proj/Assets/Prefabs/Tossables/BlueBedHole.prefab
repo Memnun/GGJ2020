@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6223835962933282104}
   m_Layer: 0
   m_Name: BlueBedHole
-  m_TagString: Untagged
+  m_TagString: hole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -305,6 +305,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   raypoints: []
-  Renderer: {fileID: 3014725932966688533}
-  coll: {fileID: 933885806406160031}
   overlapCount: 0

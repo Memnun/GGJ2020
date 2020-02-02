@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7313279991693062068
+--- !u!1 &3775154582580732687
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,14 +8,14 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7313279991693062071}
-  - component: {fileID: 7313279991693062070}
-  - component: {fileID: 7313279991693062069}
-  - component: {fileID: 7313279991693062072}
-  - component: {fileID: 7313279991693062073}
-  - component: {fileID: 7313279991693062074}
-  - component: {fileID: 7313279991693062075}
-  - component: {fileID: 7313279991693062076}
+  - component: {fileID: 3775154582580732684}
+  - component: {fileID: 3775154582580732685}
+  - component: {fileID: 3775154582580732686}
+  - component: {fileID: 3775154582580732675}
+  - component: {fileID: 3775154582580732674}
+  - component: {fileID: 3775154582580732673}
+  - component: {fileID: 3775154582580732672}
+  - component: {fileID: 3775154582580732679}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -23,13 +23,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7313279991693062071
+--- !u!4 &3775154582580732684
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7313279991693062068}
+  m_GameObject: {fileID: 3775154582580732687}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.7, y: 25.1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -37,13 +37,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!20 &7313279991693062070
+--- !u!20 &3775154582580732685
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7313279991693062068}
+  m_GameObject: {fileID: 3775154582580732687}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -80,21 +80,21 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &7313279991693062069
+--- !u!81 &3775154582580732686
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7313279991693062068}
+  m_GameObject: {fileID: 3775154582580732687}
   m_Enabled: 0
---- !u!114 &7313279991693062072
+--- !u!114 &3775154582580732675
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7313279991693062068}
+  m_GameObject: {fileID: 3775154582580732687}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e08c616140936e4b9907bc025f0a162, type: 3}
@@ -109,15 +109,29 @@ MonoBehaviour:
   - {fileID: 6249662830323715744, guid: a2f68a4090a944aec9bccd7b20550d93, type: 3}
   - {fileID: 2188515805998999932, guid: 40672cf9bfa0d4366bc4dc8764890444, type: 3}
   Upgrades: 
+  ammotypes:
+  - {fileID: 3530999769801032818, guid: c445f349e5a68134a905660cb86ea47b, type: 3}
+  - {fileID: 3978452744957250307, guid: 150254f97e24cff49bb0547e55c845f7, type: 3}
+  - {fileID: 2483611463725112455, guid: 1a1000a90be16433ca253d3daaa4403d, type: 3}
+  - {fileID: 2188515805998999932, guid: 40672cf9bfa0d4366bc4dc8764890444, type: 3}
+  - {fileID: 6651331324095594880, guid: 0ef9a1e66760d824f9480cd9958680f4, type: 3}
+  - {fileID: 6013338698029532594, guid: 9382583aaefc42c4595758b3f89d170c, type: 3}
+  - {fileID: 322421040931929262, guid: 8a60ff971f48afb459fbcbf3658a0162, type: 3}
+  - {fileID: 409094352756927068, guid: fba37a067fd21be499d54441e80a2697, type: 3}
+  - {fileID: 5392124374865577783, guid: 1bbd39f537cfdd44d88c28e73bc386ea, type: 3}
+  - {fileID: 6249662830323715744, guid: a2f68a4090a944aec9bccd7b20550d93, type: 3}
+  - {fileID: 254834762121990650, guid: 29072acdc809f85468812b50d7632ca5, type: 3}
+  - {fileID: 5140505628810794904, guid: eddb76a4d864d224cbfac87f49878cc5, type: 3}
   shadowOffset: {x: 0.2, y: -0.2}
   launchStrength: 750
---- !u!114 &7313279991693062073
+  currentLevel: 0
+--- !u!114 &3775154582580732674
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7313279991693062068}
+  m_GameObject: {fileID: 3775154582580732687}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9468c5f457ace64f8d4df6d642b107f, type: 3}
@@ -131,40 +145,41 @@ MonoBehaviour:
   - Music
   CollisionTag: 
   PreloadSamples: 0
---- !u!114 &7313279991693062074
+--- !u!114 &3775154582580732673
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7313279991693062068}
+  m_GameObject: {fileID: 3775154582580732687}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ListenerNumber: -1
---- !u!114 &7313279991693062075
+--- !u!114 &3775154582580732672
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7313279991693062068}
+  m_GameObject: {fileID: 3775154582580732687}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e02c956043c4bd040bf3a58b63d0ca4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   followTarget: {fileID: 0}
-  bounds: {x: -90, y: 90, z: 15, w: 85}
---- !u!114 &7313279991693062076
+  bounds: {x: -251, y: 29, z: -14, w: 30}
+  defaultTarget: {fileID: 0}
+--- !u!114 &3775154582580732679
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7313279991693062068}
+  m_GameObject: {fileID: 3775154582580732687}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eddc7df1b219b324facce4c6d5490a35, type: 3}

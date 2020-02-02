@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6901122593281919903}
   m_Layer: 0
   m_Name: BedSetHole
-  m_TagString: Untagged
+  m_TagString: hole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -203,6 +203,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   raypoints: []
-  Renderer: {fileID: 1603086939112330916}
-  coll: {fileID: 3683080699216572206}
   overlapCount: 0
