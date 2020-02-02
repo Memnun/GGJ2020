@@ -15,11 +15,11 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Assets\FMOD\GG2020FMOD\GG2020FMOD.fspro
+  sourceProjectPath: Assets/FMOD/GG2020FMOD/GG2020FMOD.fspro
   sourceBankPath: Assets\FMOD\GG2020FMOD\Build
   SourceBankPathUnformatted: 
-  AutomaticEventLoading: 1
-  BankLoadType: 0
+  AutomaticEventLoading: 0
+  BankLoadType: 2
   AutomaticSampleLoading: 0
   EncryptionKey: 
   ImportType: 0

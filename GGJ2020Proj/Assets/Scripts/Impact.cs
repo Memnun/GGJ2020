@@ -15,7 +15,7 @@ public class Impact : MonoBehaviour
     
     private void OnCollisionEnter2D(Collision2D other)
     {
-        GetComponent<StudioEventEmitter>().SetParameter("ImpactSpeed", Map(GetComponent<Rigidbody2D>().velocity.magnitude, 0, 10, 0, 1));
+        GetComponent<StudioEventEmitter>().SetParameter("ImpactSpeed", Map(GetComponent<Rigidbody2D>().velocity.magnitude, 1, 10, 0, 1));
         GetComponent<StudioEventEmitter>().SetParameter("Weight", weightval);
         GetComponent<StudioEventEmitter>().Play();
     }
