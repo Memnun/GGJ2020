@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="ParameterPreset" id="{4f8a797b-8546-478c-8b2f-db4fe2b1a87e}">
 		<property name="name">
-			<value>Impact Speed</value>
+			<value>IDB</value>
 		</property>
 		<relationship name="folder">
 			<destination>{a73ee5fd-811c-4f96-b4d2-37d2754e111c}</destination>
