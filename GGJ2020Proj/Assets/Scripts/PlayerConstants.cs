@@ -33,7 +33,7 @@ public class PlayerConstants : MonoBehaviour
     {
         if (Upgrades.Contains(1) &&
             GetComponent<CameraController>().followTarget != GetComponent<CameraController>().defaultTarget &&
-            Input.GetKeyDown("space"))
+            Input.GetMouseButtonDown(0))
         {
             GetComponent<CameraController>().followTarget.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
             Upgrades.Remove(1);

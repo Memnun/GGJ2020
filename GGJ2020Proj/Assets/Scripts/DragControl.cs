@@ -30,8 +30,15 @@ public class DragControl : MonoBehaviour
     public void OnMouseDrag()
     {
         Vector2 p= Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        List<int> k = Camera.main.GetComponent<PlayerConstants>().Upgrades;
+        int j = 0;
+        foreach (int i in k)
+        {
+            if (i == 2) j++;
+        }
         
-        float radius = 3.6f;
+        float radius = 5.0f + (j*0.5f);
         Vector2 dir = p - startPos;
         if (dir.magnitude > radius)
             dir = dir.normalized * radius;

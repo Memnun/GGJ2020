@@ -12,6 +12,12 @@ public class CameraController : MonoBehaviour
     public Vector4 bounds;
     public GameObject defaultTarget;
     private int framedelay;
+    public bool following;
+    private bool followbuffer;
+    private GameObject mousepan;
+    
+    
+    
     void Awake()
     {
         transform.position = followTarget.transform.position + new Vector3(0, 0, -100f);
@@ -21,94 +27,113 @@ public class CameraController : MonoBehaviour
     {
         defaultTarget = followTarget;
         framedelay = 0;
+        following = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (followTarget == null)
+        if (following)
         {
-            GameObject x = GameObject.Find("CannonWheel");
-            if (x != null)
+            if (followTarget == null)
             {
-                followTarget = x;
-            }
-        }
-        if (defaultTarget == null)
-        {
-            GameObject x = GameObject.Find("CannonWheel");
-            if (x != null)
-            {
-                defaultTarget = x;
-            }
-        }
-        //////////// CAMERA TRACKING //////////////
-        if (followTarget != null)
-        {
-            if (followTarget.transform.position.x < bounds.x)
-            {
-                transform.position = new Vector3(bounds.x, transform.position.y, -10f);
-            }
-            else if (followTarget.transform.position.x > bounds.y)
-            {
-                transform.position = new Vector3(bounds.y, transform.position.y, -10f);
-            }
-            else
-            {
-                transform.position = new Vector3(followTarget.transform.position.x, transform.position.y, -10f);
-            }
-
-            if (followTarget.transform.position.y < bounds.z)
-            {
-                transform.position = new Vector3(transform.position.x, bounds.z, -10f);
-            }
-            else if (followTarget.transform.position.y > bounds.w)
-            {
-                transform.position = new Vector3(transform.position.x, bounds.w, -10f);
-            }
-            else
-            {
-                transform.position = new Vector3(transform.position.x, followTarget.transform.position.y, -10f);
-            }
-        }
-
-        ///////////////// TARGET SWITCHING ///////////////////
-        if (followTarget != defaultTarget)
-        {
-            if (framedelay < 60)
-            {
-                framedelay++;
-            }
-            else
-            {
-                if (followTarget.GetComponent<Rigidbody2D>().velocity.magnitude < 0.05f)
+                GameObject x = GameObject.Find("CannonWheel");
+                if (x != null)
                 {
-                    followTarget = defaultTarget;
-                    framedelay = 0;
-                    GameObject.Find("CannonBody").GetComponent<LevelSound>().reloaded = true;
-                    GetComponent<GlobalSounds>().MusicIntensity = 0;
+                    followTarget = x;
                 }
             }
-        }
 
-        if (GameObject.Find("CannonBody") != null)
+            if (defaultTarget == null)
+            {
+                GameObject x = GameObject.Find("CannonWheel");
+                if (x != null)
+                {
+                    defaultTarget = x;
+                }
+            }
+
+            //////////// CAMERA TRACKING //////////////
+            if (followTarget != null)
+            {
+                if (followTarget.transform.position.x < bounds.x)
+                {
+                    transform.position = new Vector3(bounds.x, transform.position.y, -10f);
+                }
+                else if (followTarget.transform.position.x > bounds.y)
+                {
+                    transform.position = new Vector3(bounds.y, transform.position.y, -10f);
+                }
+                else
+                {
+                    transform.position = new Vector3(followTarget.transform.position.x, transform.position.y, -10f);
+                }
+
+                if (followTarget.transform.position.y < bounds.z)
+                {
+                    transform.position = new Vector3(transform.position.x, bounds.z, -10f);
+                }
+                else if (followTarget.transform.position.y > bounds.w)
+                {
+                    transform.position = new Vector3(transform.position.x, bounds.w, -10f);
+                }
+                else
+                {
+                    transform.position = new Vector3(transform.position.x, followTarget.transform.position.y, -10f);
+                }
+            }
+
+            ///////////////// TARGET SWITCHING ///////////////////
+            if (followTarget != defaultTarget)
+            {
+                if (framedelay < 60)
+                {
+                    framedelay++;
+                }
+                else
+                {
+                    if (followTarget.GetComponent<Rigidbody2D>().velocity.magnitude < 0.05f)
+                    {
+                        followTarget = defaultTarget;
+                        framedelay = 0;
+                        GameObject.Find("CannonBody").GetComponent<LevelSound>().reloaded = true;
+                        GetComponent<GlobalSounds>().MusicIntensity = 0;
+                    }
+                }
+            }
+
+            if (GameObject.Find("CannonBody") != null)
+            {
+                GameObject.Find("CannonBody").GetComponent<LevelSound>().ambienceWoosh
+                    .setParameterByName("LevelPosition",
+                        followTarget.GetComponent<Rigidbody2D>().velocity.magnitude * 1.0f);
+            }
+
+            if (GameObject.Find("level1"))
+            {
+                bounds = new Vector4(-195, 29, 7, 30);
+                Destroy(GameObject.Find("level1"));
+            }
+
+            if (GameObject.Find("level2"))
+            {
+                bounds = new Vector4(-210, 31, 8, 20);
+                Destroy(GameObject.Find("level2"));
+            }
+        }
+        
+
+        if (following && !followbuffer)
         {
-            GameObject.Find("CannonBody").GetComponent<LevelSound>().ambienceWoosh
-                .setParameterByName("LevelPosition",
-                    followTarget.GetComponent<Rigidbody2D>().velocity.magnitude * 1.0f);
+            followbuffer = following;
+            mousepan = new GameObject();
+            mousepan.AddComponent<followMouseScript>();
         }
 
-        if (GameObject.Find("level1"))
+        if (followbuffer && !following)
         {
-            bounds = new Vector4(-195, 29, 7, 30);
-            Destroy(GameObject.Find("level1"));
+            followTarget = defaultTarget;
+            Destroy(mousepan);
         }
-
-        if (GameObject.Find("level2"))
-        {
-            bounds = new Vector4(-210, 31, 8, 20);
-            Destroy(GameObject.Find("level2"));
-        }
-
     }
 }

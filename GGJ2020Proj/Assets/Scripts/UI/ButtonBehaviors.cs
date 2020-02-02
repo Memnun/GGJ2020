@@ -36,8 +36,8 @@ public class ButtonBehaviors : MonoBehaviour
     {
         if (player.Cash >= 500)
         {
-            player.launchStrength += 25;
             player.Cash -= 500;
+            player.Upgrades.Add(2);
         }
     }
 
