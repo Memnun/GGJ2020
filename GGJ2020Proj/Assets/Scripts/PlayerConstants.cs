@@ -33,6 +33,7 @@ public class PlayerConstants : MonoBehaviour
             Input.GetKeyDown("space"))
         {
             GetComponent<CameraController>().followTarget.GetComponent<Rigidbody2D>().isKinematic = true;
+            
         }
             
     }

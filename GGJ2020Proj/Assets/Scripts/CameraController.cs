@@ -69,11 +69,34 @@ public class CameraController : MonoBehaviour
                 }
             }
         }
-        
-        GameObject.Find("CannonBody").GetComponent<LevelSound>().ambienceWoosh
-            .setParameterByName("LevelPosition", followTarget.GetComponent<Rigidbody2D>().velocity.magnitude*1.0f);
-        
-        
-        
+
+        if (defaultTarget == null)
+        {
+            GameObject x = GameObject.Find("CannonWheel");
+            if (x != null)
+            {
+                defaultTarget = x;
+            }
+        }
+
+        if (GameObject.Find("CannonBody") != null)
+        {
+            GameObject.Find("CannonBody").GetComponent<LevelSound>().ambienceWoosh
+                .setParameterByName("LevelPosition",
+                    followTarget.GetComponent<Rigidbody2D>().velocity.magnitude * 1.0f);
+        }
+
+        if (GameObject.Find("level1"))
+        {
+            bounds = new Vector4(-251, 29, -14, 30);
+            Destroy(GameObject.Find("level1"));
+        }
+
+        if (GameObject.Find("level2"))
+        {
+            bounds = new Vector4(-210, 31, 8, 20);
+            Destroy(GameObject.Find("level2"));
+        }
+
     }
 }

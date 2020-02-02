@@ -1,15 +1,25 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ButtonBehaviors : MonoBehaviour
 {
     
     private PlayerConstants player;
+    private GameObject cashout;
 
     void Start()
     {
         player = Camera.main.GetComponent<PlayerConstants>();
+        cashout = GameObject.Find("cashReadout");
+    }
+
+    private void Update()
+    {
+        cashout.GetComponent<TextMeshProUGUI>().text = "Wallet: " + player.Cash + " cash";
     }
 
     public void buyFreeze()
