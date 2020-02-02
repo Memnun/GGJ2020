@@ -1,5 +1,16 @@
-GGJ 2020
+Cannon Construction
 
-Contributors
-Andrew Powell
-[put your names here guys]
+Contributors:
+
+-Andrew Powell
+
+-Will Edmisten
+
+-Alexis Herrington
+
+-Lisa Yang
+
+-Danny Lee
+
+-Jonatan Galves
+
