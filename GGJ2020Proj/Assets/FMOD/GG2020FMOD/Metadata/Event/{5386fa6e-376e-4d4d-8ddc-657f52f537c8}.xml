@@ -174,6 +174,7 @@
 			<destination>{1e98f1ae-a469-47a3-8220-38b2a9d98ceb}</destination>
 			<destination>{552c818a-a96c-487d-b2be-59e8abf715ea}</destination>
 			<destination>{03818b48-be23-457e-9046-2cf3cb0450fe}</destination>
+			<destination>{c2df0d60-d65c-4dd7-a9c6-78fc5b6e5fe6}</destination>
 		</relationship>
 	</object>
 	<object class="ParameterProxy" id="{cc03fef3-6dfe-440d-b784-3edde6b6cd31}">
@@ -883,6 +884,29 @@
 			<destination>{18753ff2-2421-4ea4-ab00-f193df86f85f}</destination>
 		</relationship>
 	</object>
+	<object class="TransitionRegion" id="{c2df0d60-d65c-4dd7-a9c6-78fc5b6e5fe6}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="length">
+			<value>6</value>
+		</property>
+		<property name="quantizationInterval">
+			<value>5</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{104a3384-36ee-4aab-830e-a730f28082a3}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{28ddbfb7-aa10-4727-90d1-1822f2fc8370}</destination>
+		</relationship>
+		<relationship name="destination">
+			<destination>{febb48ca-949f-4727-a67a-66e9d5b0262c}</destination>
+		</relationship>
+		<relationship name="triggerConditions">
+			<destination>{a8ff946d-d759-4427-a556-247c60a69e02}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{6410c895-e90e-4f88-8113-cd24ce4a47cd}">
 		<relationship name="effects">
 			<destination>{af453aa4-9056-4213-a8e5-5690a514ab8e}</destination>
@@ -1079,6 +1103,17 @@
 		</property>
 		<property name="maximum">
 			<value>0</value>
+		</property>
+		<relationship name="parameter">
+			<destination>{5d6af6b9-1d0a-445a-ba84-cacfd88c0640}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterCondition" id="{a8ff946d-d759-4427-a556-247c60a69e02}">
+		<property name="minimum">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
 		</property>
 		<relationship name="parameter">
 			<destination>{5d6af6b9-1d0a-445a-ba84-cacfd88c0640}</destination>
