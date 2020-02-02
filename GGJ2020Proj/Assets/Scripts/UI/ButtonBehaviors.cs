@@ -32,6 +32,14 @@ public class ButtonBehaviors : MonoBehaviour
         }
     }
 
+    public void buyPower()
+    {
+        if (player.Cash >= 500)
+        {
+            player.launchStrength += 25;
+        }
+    }
+
     public void buyRandomFurniture()
     {
         if (player.Cash >= 50)

@@ -104,10 +104,6 @@ MonoBehaviour:
   Swings: 0
   Furniture:
   - {fileID: 2188515805998999932, guid: 40672cf9bfa0d4366bc4dc8764890444, type: 3}
-  - {fileID: 2483611463725112455, guid: 1a1000a90be16433ca253d3daaa4403d, type: 3}
-  - {fileID: 2188515805998999932, guid: 40672cf9bfa0d4366bc4dc8764890444, type: 3}
-  - {fileID: 6249662830323715744, guid: a2f68a4090a944aec9bccd7b20550d93, type: 3}
-  - {fileID: 2188515805998999932, guid: 40672cf9bfa0d4366bc4dc8764890444, type: 3}
   Upgrades: 
   ammotypes:
   - {fileID: 3530999769801032818, guid: c445f349e5a68134a905660cb86ea47b, type: 3}
