@@ -44,8 +44,9 @@ public class DragControl : MonoBehaviour
     {
         if (Camera.main.GetComponent<PlayerConstants>().Furniture.Count > 0)
         {
+            GetComponent<ParticleSystem>().Play();
             Vector2 dir = (Vector2) reticle.transform.position - startPos;
-            GameObject ammo = Instantiate(Camera.main.GetComponent<PlayerConstants>().Furniture[0], transform.position,
+            GameObject ammo = Instantiate(Camera.main.GetComponent<PlayerConstants>().Furniture[0], transform.TransformPoint(new Vector3(6, 3, 0)),
                 Quaternion.identity);
             ammo.GetComponent<Rigidbody2D>().AddForce(Camera.main.GetComponent<PlayerConstants>().launchStrength * dir);
             ammo.GetComponent<Rigidbody2D>().AddTorque(Random.Range(-150f, 150f));
