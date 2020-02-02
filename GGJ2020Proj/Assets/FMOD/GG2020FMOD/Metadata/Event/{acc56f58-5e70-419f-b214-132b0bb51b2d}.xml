@@ -67,7 +67,11 @@
 			<destination>{e1971656-b20d-47a5-92b5-04e728031a9a}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{41a4111c-458b-4e04-892e-a0b53f5d34a0}" />
+	<object class="EventAutomatableProperties" id="{41a4111c-458b-4e04-892e-a0b53f5d34a0}">
+		<property name="triggerCooldown">
+			<value>500</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{f1b57afb-8a38-4ca0-a018-ea521b7c99bc}" />
 	<object class="GroupTrack" id="{3b338d5e-41ba-42e0-81c3-9f4ce1f6cd1b}">
 		<relationship name="automationTracks">
@@ -75,7 +79,6 @@
 			<destination>{6da1cee2-173d-4b7a-a463-a0d73c62049c}</destination>
 		</relationship>
 		<relationship name="modules">
-			<destination>{49775f15-c557-4dee-869d-d55718d03499}</destination>
 			<destination>{14ccc91b-385f-4cf6-9439-7cc044e39504}</destination>
 			<destination>{b5f9aed3-98da-4358-a4e8-7b550378f078}</destination>
 		</relationship>
@@ -99,7 +102,6 @@
 		<relationship name="modules">
 			<destination>{1b74783c-ea98-4fae-af89-e1537bb25111}</destination>
 			<destination>{d56a9909-c2e2-4c7d-abe1-48d326785d53}</destination>
-			<destination>{49775f15-c557-4dee-869d-d55718d03499}</destination>
 			<destination>{14ccc91b-385f-4cf6-9439-7cc044e39504}</destination>
 			<destination>{b5f9aed3-98da-4358-a4e8-7b550378f078}</destination>
 		</relationship>
@@ -147,17 +149,6 @@
 	<object class="AutomationTrack" id="{6da1cee2-173d-4b7a-a463-a0d73c62049c}">
 		<relationship name="automator">
 			<destination>{fc750be5-feae-4414-8289-83ff901d3de8}</destination>
-		</relationship>
-	</object>
-	<object class="CommandSound" id="{49775f15-c557-4dee-869d-d55718d03499}">
-		<property name="start">
-			<value>1.5</value>
-		</property>
-		<property name="length">
-			<value>0.5</value>
-		</property>
-		<relationship name="targetEvent">
-			<destination>{acc56f58-5e70-419f-b214-132b0bb51b2d}</destination>
 		</relationship>
 	</object>
 	<object class="MultiSound" id="{14ccc91b-385f-4cf6-9439-7cc044e39504}">
