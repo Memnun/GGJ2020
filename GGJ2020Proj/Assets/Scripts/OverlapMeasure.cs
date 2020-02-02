@@ -9,13 +9,15 @@ public class OverlapMeasure : MonoBehaviour
 {
 
     public List<Vector2> raypoints;
-    public SpriteRenderer Renderer;
-    public Collider2D coll;
+    private SpriteRenderer Renderer;
+    private Collider2D coll;
     public int overlapCount;
     
     // Start is called before the first frame update
     void Start()
     {
+        Renderer = GetComponent<SpriteRenderer>();
+        coll = GetComponent<Collider2D>();
         raypoints = new List<Vector2>();
         while (raypoints.Count < 100)
         {
