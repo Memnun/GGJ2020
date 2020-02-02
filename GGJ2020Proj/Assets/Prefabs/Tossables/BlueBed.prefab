@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 5169383553597086246}
   - component: {fileID: 4926119305884111829}
   - component: {fileID: 5477030332456452923}
+  - component: {fileID: 369487782668057906}
+  - component: {fileID: -8141424529435887922}
   m_Layer: 0
   m_Name: BlueBed
   m_TagString: Untagged
@@ -328,3 +330,39 @@ PolygonCollider2D:
       - {x: 1.4449999, y: -3.33}
       - {x: 1.525, y: -3.3249998}
       - {x: 1.645, y: -3.3149998}
+--- !u!114 &369487782668057906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3978452744957250307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Projectiles/ImpactWood
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &-8141424529435887922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3978452744957250307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 103d717b85ebe3646b54ed08a6fb2c8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weightval: 1

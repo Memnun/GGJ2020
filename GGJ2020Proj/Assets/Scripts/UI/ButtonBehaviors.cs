@@ -25,7 +25,7 @@ public class ButtonBehaviors : MonoBehaviour
 
     public void buyFreeze()
     {
-        if (player.Cash >= 1000 && !player.Upgrades.Contains(1))
+        if (player.Cash >= 1000)
         {
             player.Cash -= 1000;
             player.Upgrades.Add(1);

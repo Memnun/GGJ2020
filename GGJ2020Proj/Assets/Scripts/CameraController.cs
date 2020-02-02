@@ -43,6 +43,8 @@ public class CameraController : MonoBehaviour
             }
         }
         //////////// CAMERA TRACKING //////////////
+        if (followTarget != null)
+        {
             if (followTarget.transform.position.x < bounds.x)
             {
                 transform.position = new Vector3(bounds.x, transform.position.y, -10f);
@@ -68,7 +70,9 @@ public class CameraController : MonoBehaviour
             {
                 transform.position = new Vector3(transform.position.x, followTarget.transform.position.y, -10f);
             }
-            ///////////////// TARGET SWITCHING ///////////////////
+        }
+
+        ///////////////// TARGET SWITCHING ///////////////////
         if (followTarget != defaultTarget)
         {
             if (framedelay < 60)

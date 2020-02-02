@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3226087907841921189}
   - component: {fileID: 3397152558187665750}
   - component: {fileID: 2844684218618087864}
+  - component: {fileID: 1216950079412059618}
+  - component: {fileID: -3168269355501798279}
   m_Layer: 0
   m_Name: Painting
   m_TagString: Untagged
@@ -147,3 +149,39 @@ PolygonCollider2D:
       - {x: -2.2033334, y: -2.7033334}
       - {x: 2.2033334, y: -2.7033334}
       - {x: 2.2033334, y: 2.7033334}
+--- !u!114 &1216950079412059618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6651331324095594880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Projectiles/ImpactWood
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &-3168269355501798279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6651331324095594880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 103d717b85ebe3646b54ed08a6fb2c8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weightval: 0

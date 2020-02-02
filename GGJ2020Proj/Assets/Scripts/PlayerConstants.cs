@@ -36,7 +36,7 @@ public class PlayerConstants : MonoBehaviour
             Input.GetKeyDown("space"))
         {
             GetComponent<CameraController>().followTarget.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-
+            Upgrades.Remove(1);
         }
 
         if (SceneManager.GetActiveScene().name != "ShopMenu" && Furniture.Count <= 0 && GetComponent<CameraController>().followTarget == GetComponent<CameraController>().defaultTarget)
@@ -59,7 +59,10 @@ public class PlayerConstants : MonoBehaviour
         }
 
         Cash += accuracy * 5;
-        Cash += 50;
+        if (Cash < 50)
+        {
+            Cash = 50;
+        }
 
         if ((float) holes / (float) accuracy < 2)
         {

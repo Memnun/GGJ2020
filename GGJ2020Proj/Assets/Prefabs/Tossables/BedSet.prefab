@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 4723074038585775447}
   - component: {fileID: 4786195336241241252}
   - component: {fileID: 5347107796200164426}
+  - component: {fileID: -8630158967317960552}
+  - component: {fileID: 5014988952875233537}
   m_Layer: 0
   m_Name: BedSet
   m_TagString: Untagged
@@ -226,3 +228,39 @@ PolygonCollider2D:
       - {x: -0.79999995, y: -2.57}
       - {x: -0.615, y: -2.565}
       - {x: -0.435, y: -2.56}
+--- !u!114 &-8630158967317960552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3530999769801032818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Projectiles/ImpactWood
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &5014988952875233537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3530999769801032818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 103d717b85ebe3646b54ed08a6fb2c8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weightval: 0

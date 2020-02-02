@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 4206282653414643218}
   - component: {fileID: 4161315426487689185}
   - component: {fileID: 3594069504609947407}
+  - component: {fileID: 7155255353113835590}
+  - component: {fileID: -7622824169258248038}
   m_Layer: 0
   m_Name: Toilet
   m_TagString: Untagged
@@ -372,3 +374,39 @@ PolygonCollider2D:
       - {x: 0.44333336, y: -2.5666668}
       - {x: 0.49333334, y: -2.5533333}
       - {x: 0.5566667, y: -2.53}
+--- !u!114 &7155255353113835590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5392124374865577783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Projectiles/ImpactWood
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &-7622824169258248038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5392124374865577783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 103d717b85ebe3646b54ed08a6fb2c8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weightval: 0

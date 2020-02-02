@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 8441573503384009593}
   - component: {fileID: 8558598495995540106}
   - component: {fileID: 9122457234875376228}
+  - component: {fileID: -6896891092026976284}
+  - component: {fileID: 18460513972521608}
   m_Layer: 0
   m_Name: TableLamp
   m_TagString: Untagged
@@ -284,3 +286,39 @@ PolygonCollider2D:
       - {x: 0.5277778, y: -2.5944445}
       - {x: 0.5888889, y: -2.5833335}
       - {x: 0.70555556, y: -2.5555556}
+--- !u!114 &-6896891092026976284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409094352756927068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Projectiles/ImpactWood
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &18460513972521608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409094352756927068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 103d717b85ebe3646b54ed08a6fb2c8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weightval: 0

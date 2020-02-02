@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 8287258389592899807}
   - component: {fileID: 8134063895741696300}
   - component: {fileID: 8700186460276545986}
+  - component: {fileID: 4684859086792774248}
+  - component: {fileID: -6104080109942639707}
   m_Layer: 0
   m_Name: TV
   m_TagString: Untagged
@@ -149,3 +151,39 @@ PolygonCollider2D:
       - {x: 2.605, y: -1.395}
       - {x: 3.05, y: -1.345}
       - {x: 3.05, y: 2.7}
+--- !u!114 &4684859086792774248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254834762121990650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Projectiles/ImpactMetal
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &-6104080109942639707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254834762121990650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 103d717b85ebe3646b54ed08a6fb2c8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weightval: 0
