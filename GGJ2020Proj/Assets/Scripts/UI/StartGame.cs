@@ -21,5 +21,10 @@ public class StartGame : MonoBehaviour
     {
         SceneManager.LoadScene("LVLTwo_Rooms", LoadSceneMode.Single);
     }
+
+    public void EndGame()
+    {
+        Application.Quit();
+    }
     
 }
