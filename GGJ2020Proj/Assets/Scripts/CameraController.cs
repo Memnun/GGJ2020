@@ -96,7 +96,7 @@ public class CameraController : MonoBehaviour
 
         if (GameObject.Find("level1"))
         {
-            bounds = new Vector4(-251, 29, -14, 30);
+            bounds = new Vector4(-195, 29, 7, 30);
             Destroy(GameObject.Find("level1"));
         }
 

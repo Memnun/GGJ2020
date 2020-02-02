@@ -58,7 +58,7 @@ public class PlayerConstants : MonoBehaviour
             accuracy += collider.GetComponent<OverlapMeasure>().overlapCount;
         }
 
-        Cash += accuracy * 10;
+        Cash += accuracy * 5;
         Cash += 50;
 
         if ((float) holes / (float) accuracy < 2)

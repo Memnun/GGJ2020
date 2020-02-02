@@ -20,7 +20,7 @@ public class ButtonBehaviors : MonoBehaviour
 
     private void Update()
     {
-        cashout.GetComponent<TextMeshProUGUI>().text = "Wallet: " + player.Cash + " cash";
+        cashout.GetComponent<TextMeshProUGUI>().text = player.Cash+"";
     }
 
     public void buyFreeze()
@@ -37,6 +37,7 @@ public class ButtonBehaviors : MonoBehaviour
         if (player.Cash >= 500)
         {
             player.launchStrength += 25;
+            player.Cash -= 500;
         }
     }
 
